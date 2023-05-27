@@ -1,20 +1,17 @@
 body{
     .seccionUno{
         height: 100vh;
-        width: 50%;
+        width: 100%;
         display: flex;
         justify-content: center;
         text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        .parrafo{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: center;
-            p{
-                padding: 10%;
+        margin:auto;
+        .textoUno{
+            margin-top: 10%;
+            h2{
+                margin-bottom: 10%;
             }
         }
+        
     }
 }
