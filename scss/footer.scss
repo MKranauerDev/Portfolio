@@ -2,8 +2,12 @@ body{
     footer{
         border-radius: 5px;
         border:1px solid #378bba;
+        background: #000;
+        opacity: 80%;
+        width: 80%;
+        align-items: center;
         .separador{
-            color: #378bba;
+            border: 1px solid #378bba;
         }
         h6{
             a{
