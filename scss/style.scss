@@ -42,36 +42,28 @@ body {
         height: calc(100vh - 55px);
         border: 1px solid #378bba;
         border-radius: 5px;
-        .barra-navegacion {
-            ul {
-            display: flex; 
-            justify-content: space-between;
-            align-items: center;
-            }
-            li {
-                list-style: none;
-                display: inline-block;
-                .logo{
-                    img{
-                    width: 65x;
-                    height: 65px;  
-                    }                  
+        .navbar{
+            li{
+                margin: 0 40px;
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 19px;
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    border-bottom: 1px solid transparent;
+                    transition: .5s ease;
+                }
+                a:hover {
+                    color: #378bba;
+                    border-bottom: 1px solid currentcolor;
                 }
             }
         }
-        a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 19px;
-            font-family: 'Lato', sans-serif;
-            font-weight: 400;
-            text-transform: uppercase;
-            border-bottom: 1px solid transparent;
-            transition: .5s ease;
-        }
-        a:hover {
-            color: #378bba;
-            border-bottom: 1px solid currentcolor;
+        div.container-fluid{
+            background-color: transparent;
+            background: transparent;
         }
     }
     .contenido-descripcion {
