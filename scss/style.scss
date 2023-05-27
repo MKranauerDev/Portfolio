@@ -94,13 +94,13 @@ body {
             text-transform: uppercase;
             letter-spacing: 5px;
             span:first-child {
-                font-size: 40px; 
+                font-size: 70%; 
                 display: block;
                 font-weight: 300;
             }
             span:last-child {
             font-weight: 900;
-                font-size: 60px;
+            font-size: 100%;
             }
         }
         .btn-link {
