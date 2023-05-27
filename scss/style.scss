@@ -36,7 +36,7 @@ body {
         margin-right: auto;
         margin-top: 15px;
         padding: 20px 30px;
-        position: relative;
+        
         z-index: 1;
     }
     .header {
@@ -72,6 +72,7 @@ body {
                     text-transform: uppercase;
                     border-bottom: 1px solid transparent;
                     transition: .5s ease;
+                    text-align: left;
                 }
                 a:hover {
                     color: #378bba;
