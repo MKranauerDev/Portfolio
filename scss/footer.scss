@@ -8,16 +8,22 @@ body{
         align-items: center;
         .separador{
             border: 1px solid #378bba;
+            width: 70%;
+           margin: auto;
         }
-        h6{
-            a{
-                color: white;
-                text-decoration: none;
+        .primerFooter{
+            h6{
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+                a:hover{
+                    color: #378bba;
+                }
             }
-            a:hover{
-                color: #378bba;
-            }
+            margin-bottom: 1rem!important;;
         }
+        
         .redes{
             margin: auto;
             .btn-primary{
