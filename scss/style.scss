@@ -3,6 +3,7 @@
 @import "seccionTres.scss";
 @import "seccionCuatro.scss";
 @import "footer.scss";
+@import "chicle.scss";
 
 * { 
     margin: 0; 
@@ -33,11 +34,9 @@ body {
         opacity: 50%;
         .navbar{
             .container-fluid{
-                a{
+                .navbar-brand{
                     img{
-                        width: 60px;
-                        height: 60px;
-                        margin: auto;
+                        width: 10vh;
                     }
                 }
                 .navbar-toggler{
@@ -97,7 +96,7 @@ body {
             text-transform: uppercase;
             letter-spacing: 5px;
             span:first-child {
-                font-size: 70%; 
+                font-size: 90%; 
                 font-weight: 300;
             }
             span:last-child {
