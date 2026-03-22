@@ -293,3 +293,119 @@ body footer .pie a {
     transform: scaleX(1.15) scaleY(0.85);
   }
 }
+@media (max-width: 768px) {
+  body .contenedor {
+    width: 95%;
+    margin-top: 20px;
+    padding: 16px 14px;
+  }
+
+  body header {
+    height: auto;
+    min-height: 85vh;
+    opacity: 0.95;
+  }
+
+  body header .navbar li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  body header .navbar .navbar-collapse {
+    padding-top: 12px;
+  }
+
+  body .contenido-descripcion {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 10px 20px;
+  }
+
+  body .contenido-descripcion .row {
+    width: 100%;
+    margin: 0;
+  }
+
+  .titulo {
+    font-size: 42px;
+    margin-top: 20px;
+    line-height: 1.05;
+    word-break: break-word;
+  }
+
+  body .contenido-descripcion .titulo {
+    letter-spacing: 2px;
+  }
+
+  body .contenido-descripcion .titulo span {
+    display: block;
+  }
+
+  body .contenido-descripcion .titulo span:first-child {
+    font-size: 0.9em;
+  }
+
+  body .contenido-descripcion .titulo span:last-child {
+    font-size: 1em;
+  }
+
+  body .descripcion {
+    width: 100%;
+    padding: 0 8px;
+  }
+
+  body .descripcion p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+
+  body .seccionUno,
+  body .seccionDos,
+  body .seccionTres,
+  body .seccionCuatro {
+    width: 95%;
+    height: auto;
+    min-height: auto;
+    padding: 60px 0;
+  }
+
+  body .seccionUno .textoUno,
+  body .seccionDos .parrafo,
+  body .seccionTres .parrafo,
+  body .seccionCuatro .parrafo {
+    width: 100%;
+  }
+
+  body .seccionDos .parrafo p,
+  body .seccionTres .parrafo p,
+  body .seccionCuatro .parrafo p {
+    padding: 0;
+  }
+
+  .subtitle,
+  body .seccionDos h2,
+  body .seccionTres h2,
+  body .seccionCuatro h2 {
+    font-size: 34px;
+    margin-bottom: 24px;
+  }
+
+  body footer {
+    width: 95%;
+    margin: 30px auto 0;
+  }
+
+  body footer .redes .btn {
+    margin: 10px !important;
+  }
+}
+@media (max-width: 768px) {
+  body .seccionDos,
+  body .contenedor {
+    background-position: right center;
+  }
+}
