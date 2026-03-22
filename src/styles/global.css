@@ -103,10 +103,10 @@ body .contenedor {
 }
 
 body .contenido-descripcion {
-  width: 60%;
-  display: flex;
-  height: 100%;
-  align-items: center;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 80px 10px 10px;
 }
 
 .titulo {
