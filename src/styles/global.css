@@ -78,8 +78,8 @@ body .contenedor {
   border: 1px solid rgba(48, 185, 219, 0.35);
   border-radius: 999px;
   background: rgba(7, 11, 20, 0.45);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
   box-shadow: 0 0 20px rgba(48, 185, 219, 0.06);
 }
 
@@ -228,6 +228,13 @@ body .contenedor {
 .hero-content {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 36px 42px;
+  background: rgba(5, 10, 18, 0.38);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(48, 185, 219, 0.10);
+  border-radius: 28px;
+  box-shadow: 0 0 30px rgba(48, 185, 219, 0.05);
 }
 
 .hero-kicker {
@@ -510,15 +517,19 @@ body footer .pie a {
 }
 
 @media (max-width: 900px) {
-  .hero-minimal {
-    min-height: auto;
-    padding: 70px 18px 50px;
-  }
+    .hero-content {
+        padding: 24px 18px;
+        border-radius: 22px;
+    }
+    .hero-minimal {
+        min-height: auto;
+        padding: 70px 18px 50px;
+    }
 
-  .hero-minimal h1 {
-    font-size: 52px;
-    line-height: 0.95;
-  }
+    .hero-minimal h1 {
+        font-size: 52px;
+        line-height: 0.95;
+    }
 
   .hero-kicker {
     font-size: 13px;
