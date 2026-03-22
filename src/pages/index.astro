@@ -1,269 +1,139 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import "../styles/global.css";
+import Header from "../components/Header.astro";
+import SeccionUno from "../components/SeccionUno.astro";
+import SeccionDos from "../components/SeccionDos.astro";
+import SeccionTres from "../components/SeccionTres.astro";
+import SeccionCuatro from "../components/SeccionCuatro.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<BaseLayout title="Krana<DEV>">
+<BaseLayout title="Krana{Dev}">
   <div id="particles-js"></div>
 
-  <header data-aos="zoom-out-up" data-aos-duration="1500" class="contenedor">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="/img/logo.png" alt="Logo" />
-              </a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
+  <Header />
+  <SeccionUno />
+  <SeccionDos />
+  <SeccionTres />
+  <SeccionCuatro />
+  <Footer />
 
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      aria-current="page"
-                      href="#conocimientos">Conocimientos</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#estudios">Estudios</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contacto</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-
-          <div class="contenido-descripcion">
-            <div class="row">
-              <h1 class="titulo">
-                <span>Matias</span>
-                <span>Kranauer</span>
-              </h1>
-
-              <article class="descripcion">
-                <div>
-                  <p>
-                    Programador Full Stack, apasionado por el desarrollo web y
-                    la tecnología.
-                  </p>
-                  <p>
-                    "La solución no siempre es lo que se ve, sino lo que se
-                    construye."
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <section class="seccionUno" id="conocimientos">
-    <div class="textoUno">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="subtitle text-center">CONOCIMIENTOS</h2>
-        </div>
-      </div>
-
-      <div class="textoConocimientos">
-        <div class="row">
-          <div class="col-md-3 col-sm-3"></div>
-          <div
-            class="col-md-6 col-sm-6"
-            data-aos="fade-left"
-            data-aos-anchor="#example-anchor"
-            data-aos-offset="1200"
-            data-aos-duration="1200"
-          >
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-              fuga rem neque id eveniet accusantium tempore cupiditate
-              consectetur quam error quasi aperiam deleniti debitis, quaerat
-              autem, alias provident laudantium aspernatur.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Consectetur doloribus corporis ut veritatis corrupti eum enim
-              voluptatibus ad mollitia adipisci et, velit recusandae? Tempora
-              ad, ipsam adipisci placeat praesentium nam.
-            </p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-3 col-sm-3"></div>
-          <div
-            class="col-md-6 col-sm-6"
-            data-aos="fade-right"
-            data-aos-anchor="#example-anchor"
-            data-aos-offset="1200"
-            data-aos-duration="1200"
-          >
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
-              libero accusamus nihil temporibus eius excepturi sequi eligendi,
-              suscipit perferendis quam magnam assumenda officia labore sed
-              reprehenderit. Rerum nobis ex officiis.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis saepe, fugit laboriosam modi soluta aliquid
-              dignissimos corporis rerum nostrum dolorem voluptates
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="seccionDos" id="portfolio">
-    <div class="parrafo" data-aos="flip-right" data-aos-duration="1500">
-      <h2>Portfolio</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquid
-        illo fugiat itaque suscipit, ipsum eveniet consequuntur. Vel, facilis
-        iure saepe fugit iusto soluta eum, corrupti molestias totam, cumque
-        voluptate!
-      </p>
-    </div>
-  </section>
-
-  <section class="seccionTres" id="estudios">
-    <div
-      class="parrafo"
-      data-aos="flip-left"
-      data-aos-easing="ease-out-cubic"
-      data-aos-duration="2000"
-    >
-      <h2>Estudios</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquid
-        illo fugiat itaque suscipit, ipsum eveniet consequuntur. Vel, facilis
-        iure saepe fugit iusto soluta eum, corrupti molestias totam, cumque
-        voluptate!
-      </p>
-    </div>
-  </section>
-
-  <section class="seccionCuatro" id="contacto">
-    <div class="parrafo" data-aos="flip-up" data-aos-duration="1500">
-      <h2>Contacto</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquid
-        illo fugiat itaque suscipit, ipsum eveniet consequuntur. Vel, facilis
-        iure saepe fugit iusto soluta eum, corrupti molestias totam, cumque
-        voluptate!
-      </p>
-    </div>
-  </section>
-
-  <div class="container my-3">
-    <footer class="text-center text-white">
-      <div class="container">
-        <section class="primerFooter mt-4">
-          <div class="row text-center d-flex justify-content-center">
-            <div class="col-md-2">
-              <h6 class="text-uppercase font-weight-bold">
-                <a href="#conocimientos">Conocimientos</a>
-              </h6>
-            </div>
-            <div class="col-md-2">
-              <h6 class="text-uppercase font-weight-bold">
-                <a href="#portfolio">Portfolio</a>
-              </h6>
-            </div>
-            <div class="col-md-2">
-              <h6 class="text-uppercase font-weight-bold">
-                <a href="#estudios">Estudios</a>
-              </h6>
-            </div>
-            <div class="col-md-2">
-              <h6 class="text-uppercase font-weight-bold">
-                <a href="#contacto">Contacto</a>
-              </h6>
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <hr class="separador mb-4" />
-
-      <div class="container pb-0">
-        <section class="mb-4 redes">
-          <a
-            class="btn btn-primary btn-floating m-3"
-            style="background-color: #3b5998;"
-            href="https://www.facebook.com/MKranauer/"
-            role="button"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
-
-          <a
-            class="btn btn-primary btn-floating m-3"
-            style="background-color: #ac2bac;"
-            href="https://www.instagram.com/mkranauer/"
-            role="button"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-
-          <a
-            class="btn btn-primary btn-floating m-3"
-            style="background-color: #0082ca;"
-            href="https://www.linkedin.com/in/mkranauer/"
-            role="button"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-
-          <a
-            class="btn btn-primary btn-floating m-3"
-            style="background-color: #333333;"
-            href="https://github.com/MKranauerDev/"
-            role="button"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </section>
-      </div>
-
-      <hr class="separador mb-4" />
-
-      <div
-        class="text-center pie p-3"
-        style="background-color: rgba(0, 0, 0, 0.2);"
-      >
-        © 2026 Copyright:
-        <a class="text-white" href="#">Krana&lt;Dev&gt;</a>
-      </div>
-    </footer>
-  </div>
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", () => {
+      if (window.particlesJS) {
+        window.particlesJS("particles-js", {
+          particles: {
+            number: {
+              value: 200,
+              density: {
+                enable: true,
+                value_area: 800,
+              },
+            },
+            color: {
+              value: "#30b9db",
+            },
+            shape: {
+              type: "circle",
+              stroke: {
+                width: 0,
+                color: "#000000",
+              },
+              polygon: {
+                nb_sides: 5,
+              },
+              image: {
+                src: "img/github.svg",
+                width: 100,
+                height: 100,
+              },
+            },
+            opacity: {
+              value: 0.5,
+              random: false,
+              anim: {
+                enable: false,
+                speed: 1,
+                opacity_min: 0.1,
+                sync: false,
+              },
+            },
+            size: {
+              value: 3,
+              random: true,
+              anim: {
+                enable: false,
+                speed: 10,
+                size_min: 0.1,
+                sync: false,
+              },
+            },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: "#ffffff",
+              opacity: 0.4,
+              width: 1,
+            },
+            move: {
+              enable: true,
+              speed: 3,
+              direction: "none",
+              random: false,
+              straight: false,
+              out_mode: "out",
+              bounce: false,
+              attract: {
+                enable: false,
+                rotateX: 600,
+                rotateY: 1200,
+              },
+            },
+          },
+          interactivity: {
+            detect_on: "canvas",
+            events: {
+              onhover: {
+                enable: true,
+                mode: "repulse",
+              },
+              onclick: {
+                enable: true,
+                mode: "push",
+              },
+              resize: true,
+            },
+            modes: {
+              grab: {
+                distance: 400,
+                line_linked: {
+                  opacity: 1,
+                },
+              },
+              bubble: {
+                distance: 400,
+                size: 40,
+                duration: 2,
+                opacity: 8,
+                speed: 3,
+              },
+              repulse: {
+                distance: 200,
+                duration: 0.4,
+              },
+              push: {
+                particles_nb: 4,
+              },
+              remove: {
+                particles_nb: 2,
+              },
+            },
+          },
+          retina_detect: true,
+        });
+      } else {
+        console.error("particlesJS no está cargado");
+      }
+    });
+  </script>
 </BaseLayout>
