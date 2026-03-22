@@ -232,7 +232,7 @@ body .contenedor {
   background: rgba(5, 10, 18, 0.38);
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(48, 185, 219, 0.10);
+  border: 1px solid rgba(48, 185, 219, 0.35);
   border-radius: 28px;
   box-shadow: 0 0 30px rgba(48, 185, 219, 0.05);
 }
