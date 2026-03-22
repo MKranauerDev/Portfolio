@@ -4,6 +4,18 @@
       <img src="/img/logo.png" alt="Logo Krana Dev" />
     </a>
 
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
     <nav class="nav-desktop">
       <a href="#conocimientos">Conocimientos</a>
       <a href="#portfolio">Portfolio</a>
@@ -11,4 +23,34 @@
       <a href="#contacto">Contacto</a>
     </nav>
   </div>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#conocimientos">Conocimientos</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#estudios">Estudios</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.querySelector(".menu-toggle");
+      const menu = document.querySelector(".mobile-menu");
+
+      if (toggle && menu) {
+        toggle.addEventListener("click", () => {
+          const isOpen = menu.classList.toggle("open");
+          toggle.classList.toggle("open");
+          toggle.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        menu.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            menu.classList.remove("open");
+            toggle.classList.remove("open");
+            toggle.setAttribute("aria-expanded", "false");
+          });
+        });
+      }
+    });
+  </script>
 </header>
