@@ -160,7 +160,7 @@ body .contenedor {
 /* ===== MOBILE ===== */
 @media (max-width: 900px) {
   .topbar {
-    padding: 18px 0 0;
+    padding: 12px 0 0;
   }
 
   .topbar-inner {
@@ -518,13 +518,12 @@ body footer .pie a {
 
 @media (max-width: 900px) {
     .hero-content {
-        padding: 24px 18px;
-        border-radius: 22px;
-    }
-    .hero-minimal {
-        min-height: auto;
-        padding: 70px 18px 50px;
-    }
+    margin-top: 10px;
+  }
+     .hero-minimal {
+    padding: 20px 16px 40px;
+    min-height: auto;
+  }
 
     .hero-minimal h1 {
         font-size: 52px;
