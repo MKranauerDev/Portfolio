@@ -49,38 +49,38 @@ footer {
   z-index: 1;
 }
 
-/* ===== CONTENEDOR GENERAL ===== */
-body .contenedor {
-  width: 100%;
-  max-width: none;
-  background: transparent;
-  margin: 0;
-  padding: 0;
+/* ===== CONTAINER GENERAL ===== */
+.container-main {
+  width: min(94vw, 1380px);
+  margin: 0 auto;
 }
 
-/* ===== TOPBAR PREMIUM ===== */
+/* ===== TOPBAR ===== */
 .topbar {
   width: 100%;
-  padding: 22px 0 0;
+  padding: 18px 0 0;
   position: relative;
   z-index: 20;
 }
+
 .topbar-inner {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 18px;
+  padding: 8px 16px;
   border: 1px solid rgba(48, 185, 219, 0.35);
-  border-radius: 30px;
+  border-radius: 40px;
   background: rgba(7, 11, 20, 0.45);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
-  box-shadow: 0 0 20px rgba(48, 185, 219, 0.06);
+  box-shadow:
+    0 0 0 1px rgba(48, 185, 219, 0.08),
+    0 10px 30px rgba(0, 0, 0, 0.45);
 }
 
 .brand img {
-  width: 58px;
+  width: 50px;
   height: auto;
   display: block;
 }
@@ -88,15 +88,15 @@ body .contenedor {
 .nav-desktop {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 8px;
 }
 
 .nav-desktop a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
-  padding: 10px 16px;
+  padding: 8px 14px;
   border-radius: 999px;
   transition: 0.3s ease;
 }
@@ -107,11 +107,11 @@ body .contenedor {
   box-shadow: 0 0 10px rgba(48, 185, 219, 0.15);
 }
 
-/* Botón hamburguesa */
+/* ===== HAMBURGUESA ===== */
 .menu-toggle {
   display: none;
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
   border-radius: 999px;
   border: 1px solid rgba(48, 185, 219, 0.35);
   background: rgba(48, 185, 219, 0.06);
@@ -121,6 +121,7 @@ body .contenedor {
   gap: 5px;
   cursor: pointer;
   transition: 0.3s ease;
+  flex: 0 0 46px;
 }
 
 .menu-toggle span {
@@ -148,143 +149,106 @@ body .contenedor {
   transform: translateY(-7px) rotate(-45deg);
 }
 
-/* Menú mobile */
 .mobile-menu {
   display: none;
 }
 
-/* ===== MOBILE ===== */
-@media (max-width: 900px) {
-  .topbar {
-    padding: 12px 0 0;
-  }
-
-  .topbar-inner {
-    width: 94%;
-    padding: 12px 14px;
-    border-radius: 22px;
-  }
-
-  .brand img {
-    width: 52px;
-  }
-
-  .nav-desktop {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: flex;
-  }
-
-  .mobile-menu {
-    width: 94%;
-    margin: 12px auto 0;
-    padding: 10px;
-    border: 1px solid rgba(48, 185, 219, 0.25);
-    border-radius: 18px;
-    background: rgba(7, 11, 20, 0.88);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-    box-shadow: 0 0 16px rgba(48, 185, 219, 0.08);
-  }
-
-  .mobile-menu.open {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .mobile-menu a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    text-align: center;
-    padding: 12px 14px;
-    border-radius: 12px;
-    transition: 0.3s ease;
-  }
-
-  .mobile-menu a:hover {
-    color: #30b9db;
-    background: rgba(48, 185, 219, 0.08);
-  }
+/* ===== HERO ===== */
+.hero {
+  min-height: auto; /* o sacarlo si está en 100vh */
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
-/* ===== HERO MINIMAL ===== */
+.hero-card {
+  margin-bottom: 20px; /* bajarlo si está muy grande */
+}
 .hero-minimal {
-  min-height: 80vh;
+  min-height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px 0 80px;
-  position: relative;
-  z-index: 1;
+  padding: 30px 0 30px; /* antes 20px 0 20px */
 }
 
 .hero-content {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  padding: 36px 42px;
-  background: rgba(5, 10, 18, 0.38);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  margin-top: 10px;
+  padding: 40px 40px; /* antes 32px -> ahora más alto */
+  background: rgba(5, 10, 18, 0.45);
+  backdrop-filter: blur(6px);
   border: 1px solid rgba(48, 185, 219, 0.35);
   border-radius: 28px;
-  box-shadow: 0 0 30px rgba(48, 185, 219, 0.05);
+  box-shadow:
+    0 0 24px rgba(48, 185, 219, 0.05),
+    0 20px 60px rgba(0, 0, 0, 0.45);
+}
+.hero-description,
+.hero-quote,
+.hero-stack,
+.hero-actions {
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-kicker {
   color: #30b9db;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 15px;
-  margin-bottom: 18px;
+  font-size: 13px;
+  margin-bottom: 10px;
 }
 
 .hero-minimal h1 {
-  font-size: 120px;
+  font-size: clamp(56px, 8vw, 84px);
   line-height: 0.95;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
   color: #ffffff;
-  font-weight: 750;
-  letter-spacing: 2px;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 
 .hero-description {
-  max-width: 720px;
-  margin: 0 auto 12px;
-  font-size: 22px;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.85);
+  max-width: 680px;
+  margin: 0 auto 8px;
+  font-size: 18px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.84);
 }
 
 .hero-quote {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.55);
   font-style: italic;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
-
+.seccionUno {
+  padding-top: 10px; /* reduce el hueco entre hero y conocimientos */
+}
 /* ===== STACK ===== */
 .hero-stack {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 20px;
+  gap: 10px;
+  margin-top: 14px;
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-stack span {
-  padding: 9px 15px;
+  padding: 8px 13px;
   border-radius: 999px;
   border: 1px solid rgba(48, 185, 219, 0.35);
   background: rgba(48, 185, 219, 0.07);
   color: #d7f7ff;
-  font-size: 13px;
+  font-size: 12px;
   transition: 0.3s ease;
 }
 
@@ -294,11 +258,11 @@ body .contenedor {
   transform: translateY(-2px);
 }
 
-/* ===== BOTONES HERO ===== */
+/* ===== BOTONES ===== */
 .hero-actions {
-  margin-top: 35px;
+  margin-top: 20px;
   display: flex;
-  gap: 16px;
+  gap: 12px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -306,11 +270,11 @@ body .contenedor {
 .btn-primary-custom,
 .btn-secondary-custom {
   display: inline-block;
-  padding: 14px 28px;
+  padding: 12px 22px;
   border-radius: 999px;
   text-decoration: none;
   transition: 0.3s ease;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .btn-primary-custom {
@@ -338,7 +302,7 @@ body .contenedor {
 
 /* ===== SECCIONES ===== */
 section {
-  padding: 100px 0;
+  padding: 40px 0;
 }
 
 .subtitle {
@@ -347,7 +311,7 @@ section {
 
 body .seccionUno {
   min-height: 100vh;
-  width: 90%;
+  width: min(92%, 1080px);
   display: flex;
   justify-content: center;
   text-align: center;
@@ -364,13 +328,12 @@ body .seccionUno .textoUno h2 {
 
 body .seccionDos {
   min-height: 100vh;
-  width: 100%;
+  width: min(92%, 1080px);
   display: flex;
   justify-content: center;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1100px;
   background-size: cover;
   background-image: url("/img/home-tech-bets-scroll-banner-da.jpg");
   background-position: center;
@@ -394,7 +357,7 @@ body .seccionCuatro .parrafo p {
 
 body .seccionTres {
   min-height: 100vh;
-  width: 50%;
+  width: min(92%, 820px);
   display: flex;
   justify-content: center;
   text-align: center;
@@ -404,7 +367,7 @@ body .seccionTres {
 
 body .seccionCuatro {
   min-height: 100vh;
-  width: 50%;
+  width: min(92%, 820px);
   display: flex;
   justify-content: center;
   text-align: center;
@@ -438,7 +401,8 @@ body footer {
   border: 1px solid #378bba;
   background: #000;
   opacity: 0.8;
-  width: 100%;
+  width: min(92%, 1080px);
+  margin-inline: auto;
   align-items: center;
 }
 
@@ -515,18 +479,70 @@ body footer .pie a {
   }
 }
 
+/* ===== MOBILE ===== */
 @media (max-width: 900px) {
-.container-main {
-    width: 94%;
+  .container-main {
+    width: calc(100% - 24px);
+    max-width: none;
+    margin: 0 auto;
   }
 
+  
+
   .topbar {
-    padding: 18px 0 0;
+    padding: 14px 0 0;
   }
 
   .topbar-inner {
+    width: 100%;
     padding: 12px 14px;
     border-radius: 22px;
+    overflow: hidden;
+  }
+
+  .brand img {
+    width: 46px;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .mobile-menu {
+    width: calc(100% - 24px);
+    margin: 12px auto 0;
+    padding: 10px;
+    border: 1px solid rgba(48, 185, 219, 0.25);
+    border-radius: 18px;
+    background: rgba(7, 11, 20, 0.88);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    box-shadow: 0 0 16px rgba(48, 185, 219, 0.08);
+  }
+
+  .mobile-menu.open {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .mobile-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    padding: 12px 14px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+  }
+
+  .mobile-menu a:hover {
+    color: #30b9db;
+    background: rgba(48, 185, 219, 0.08);
   }
 
   .hero-minimal {
@@ -534,19 +550,19 @@ body footer .pie a {
     padding: 20px 0 50px;
   }
 
-    .hero-content {
-        padding: 24px 18px;
-        border-radius: 22px;
-    }
-    .hero-minimal h1 {
-        font-size: 52px;
-        line-height: 0.95;
-    }
+  .hero-content {
+    padding: 24px 18px;
+    border-radius: 22px;
+  }
 
   .hero-kicker {
     font-size: 13px;
     line-height: 1.5;
     margin-bottom: 14px;
+  }
+
+  .hero-minimal h1 {
+    font-size: 52px;
   }
 
   .hero-description {
@@ -579,10 +595,49 @@ body footer .pie a {
     font-size: 14px;
     padding: 12px 20px;
   }
+
+  body .seccionUno,
+  body .seccionDos,
+  body .seccionTres,
+  body .seccionCuatro {
+    width: calc(100% - 24px);
+    min-height: auto;
+    padding: 60px 0;
+  }
+
+  body .seccionUno .textoUno,
+  body .seccionDos .parrafo,
+  body .seccionTres .parrafo,
+  body .seccionCuatro .parrafo {
+    width: 100%;
+  }
+
+  body .seccionDos .parrafo p,
+  body .seccionTres .parrafo p,
+  body .seccionCuatro .parrafo p {
+    padding: 0;
+  }
+
+  .subtitle,
+  body .seccionDos h2,
+  body .seccionTres h2,
+  body .seccionCuatro h2 {
+    font-size: 34px;
+    margin-bottom: 24px;
+  }
+
+  body footer {
+    width: calc(100% - 24px);
+    margin: 30px auto 0;
+  }
+
+  body footer .redes .btn {
+    margin: 10px !important;
+  }
 }
 
-.container-main {
-  width: 88%;
-  max-width: 1180px;
-  margin: 0 auto;
+@media (max-width: 768px) {
+  body .seccionDos {
+    background-position: right center;
+  }
 }
