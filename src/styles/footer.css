@@ -87,7 +87,13 @@
   transition: 0.3s ease;
   position: relative;
 }
+.footer-social a i {
+  transition: 0.3s ease;
+}
 
+.footer-social a:hover i {
+  text-shadow: 0 0 10px rgba(48, 185, 219, 0.6);
+}
 .footer-social a:hover {
   color: #30b9db;
   transform: translateY(-4px) scale(1.05);

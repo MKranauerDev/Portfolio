@@ -37,7 +37,10 @@
     document.addEventListener("DOMContentLoaded", () => {
       const toggle = document.querySelector(".menu-toggle");
       const menu = document.querySelector(".mobile-menu");
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll(".nav-desktop a");
 
+      /* ===== MENU MOBILE ===== */
       if (toggle && menu) {
         toggle.addEventListener("click", () => {
           const isOpen = menu.classList.toggle("open");
@@ -53,6 +56,25 @@
           });
         });
       }
+
+      /* ===== LINK ACTIVO AL HACER SCROLL ===== */
+      window.addEventListener("scroll", () => {
+        let current = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 140;
+          if (window.scrollY >= sectionTop) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+          }
+        });
+      });
     });
   </script>
 </header>

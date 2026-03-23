@@ -1,3 +1,4 @@
+@import "./navbar.css";
 @import "./seccionUno.css";
 @import "./seccionDos.css";
 @import "./seccionTres.css";
@@ -47,104 +48,6 @@ body {
 .container-main {
   width: min(94vw, 1380px);
   margin: 0 auto;
-}
-
-/* ===== TOPBAR ===== */
-.topbar {
-  width: 100%;
-  padding: 18px 0 0;
-  position: relative;
-  z-index: 20;
-}
-
-.topbar-inner {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8px 16px;
-  border: 1px solid rgba(48, 185, 219, 0.35);
-  border-radius: 40px;
-  background: rgba(7, 11, 20, 0.45);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-  box-shadow:
-    0 0 0 1px rgba(48, 185, 219, 0.08),
-    0 10px 30px rgba(0, 0, 0, 0.45);
-}
-
-.brand img {
-  width: 50px;
-  height: auto;
-  display: block;
-}
-
-.nav-desktop {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.nav-desktop a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
-  padding: 8px 14px;
-  border-radius: 999px;
-  transition: 0.3s ease;
-}
-
-.nav-desktop a:hover {
-  color: #30b9db;
-  background: rgba(48, 185, 219, 0.12);
-  box-shadow: 0 0 10px rgba(48, 185, 219, 0.15);
-}
-
-/* ===== HAMBURGUESA ===== */
-.menu-toggle {
-  display: none;
-  width: 46px;
-  height: 46px;
-  border-radius: 999px;
-  border: 1px solid rgba(48, 185, 219, 0.35);
-  background: rgba(48, 185, 219, 0.06);
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-  transition: 0.3s ease;
-  flex: 0 0 46px;
-}
-
-.menu-toggle span {
-  display: block;
-  width: 20px;
-  height: 2px;
-  background: #ffffff;
-  border-radius: 999px;
-  transition: 0.3s ease;
-}
-
-.menu-toggle:hover {
-  background: rgba(48, 185, 219, 0.14);
-}
-
-.menu-toggle.open span:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
-}
-
-.menu-toggle.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.menu-toggle.open span:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
-}
-
-.mobile-menu {
-  display: none;
 }
 
 /* ===== HERO ===== */
