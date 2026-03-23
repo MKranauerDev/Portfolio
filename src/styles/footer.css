@@ -2,12 +2,13 @@
 
 .footer {
   width: 100%;
-  padding: 70px 0 30px;
+  padding: 30px 0 30px;
 }
 
 .footer-box {
   width: 100%;
   padding: 28px 24px;
+  margin-top: 0;
   border-radius: 24px;
   background: rgba(8, 14, 24, 0.5);
   border: 1px solid rgba(48, 185, 219, 0.18);
@@ -17,6 +18,7 @@
 }
 
 .footer-nav {
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
