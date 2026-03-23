@@ -1,5 +1,7 @@
 @import "./seccionUno.css";
 @import "./seccionDos.css";
+@import "./seccionTres.css";
+@import "./seccionCuatro.css";
 @import "./footer.css";
 
 html {
@@ -533,16 +535,6 @@ body footer .pie a {
     font-size: 14px;
     padding: 12px 20px;
   }
-
-
-  .subtitle,
-  body .seccionDos h2,
-  body .seccionTres h2,
-  body .seccionCuatro h2 {
-    font-size: 34px;
-    margin-bottom: 24px;
-  }
-
   body footer {
     width: calc(100% - 24px);
     margin: 30px auto 0;

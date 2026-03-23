@@ -1,18 +1,164 @@
-body .seccionCuatro {
-  height: 100vh;
-  width: 50%;
-  display: flex;
-  justify-content: center;
+/* ===== SECCION CUATRO - CONTACTO ===== */
+
+.seccionCuatro {
+  width: 100%;
+  padding: 70px 0;
+}
+
+.contacto-wrap {
+  width: 100%;
+}
+
+.contacto-header {
+  max-width: 760px;
+  margin: 0 auto 34px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
 }
-body .seccionCuatro .parrafo {
+
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.25fr;
+  gap: 22px;
+  align-items: stretch;
+}
+
+.contacto-info,
+.contacto-form {
+  padding: 24px;
+  border-radius: 22px;
+}
+
+.contacto-info h3 {
+  font-size: 26px;
+  margin-bottom: 14px;
+  color: #fff;
+}
+
+.contacto-info p {
+  font-size: 16px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.76);
+  margin-bottom: 22px;
+}
+
+.contacto-datos {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: center;
+  flex-direction: column;
+  gap: 14px;
 }
-body .seccionCuatro .parrafo p {
-  padding: 10%;
+
+.contacto-datos a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.contacto-datos a:hover {
+  color: #30b9db;
+}
+
+.contacto-datos i {
+  color: #30b9db;
+  font-size: 18px;
+}
+
+.contacto-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border: 1px solid rgba(48, 185, 219, 0.22);
+  background: rgba(255, 255, 255, 0.03);
+  color: #ffffff;
+  border-radius: 14px;
+  padding: 14px 14px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s ease;
+  font-family: inherit;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: rgba(48, 185, 219, 0.5);
+  box-shadow: 0 0 0 3px rgba(48, 185, 219, 0.08);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 160px;
+}
+
+.btn-contacto-submit {
+  align-self: flex-start;
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: 1px solid rgba(48, 185, 219, 0.5);
+  background: #30b9db;
+  color: #001018;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-contacto-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(48, 185, 219, 0.25);
+}
+
+@media (max-width: 900px) {
+  .seccionCuatro {
+    padding: 50px 0;
+  }
+
+  .contacto-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .contacto-info,
+  .contacto-form {
+    padding: 20px 18px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-contacto-submit {
+    width: 100%;
+    align-self: stretch;
+  }
 }
