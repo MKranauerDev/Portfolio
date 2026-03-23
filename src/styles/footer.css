@@ -26,16 +26,32 @@
 }
 
 .footer-nav a {
+  position: relative;
   color: #ffffff;
   text-decoration: none;
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.5px;
   transition: 0.3s ease;
+  padding-bottom: 4px;
+}
+
+.footer-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background: #30b9db;
+  transition: width 0.3s ease;
 }
 
 .footer-nav a:hover {
   color: #30b9db;
+}
+.footer-nav a:hover::after {
+  width: 100%;
 }
 
 .footer-divider {
@@ -69,12 +85,13 @@
   font-size: 20px;
   text-decoration: none;
   transition: 0.3s ease;
+  position: relative;
 }
 
 .footer-social a:hover {
   color: #30b9db;
-  transform: translateY(-3px);
-  box-shadow: 0 0 18px rgba(48, 185, 219, 0.18);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 0 18px rgba(48, 185, 219, 0.25);
   background: rgba(48, 185, 219, 0.12);
 }
 
