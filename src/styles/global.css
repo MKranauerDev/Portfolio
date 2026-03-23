@@ -313,72 +313,6 @@ section {
   margin-bottom: 40px;
 }
 
-body .seccionUno {
-  min-height: 100vh;
-  width: min(92%, 1080px);
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: auto;
-}
-
-body .seccionUno .textoUno {
-  margin-top: 10%;
-}
-
-body .seccionUno .textoUno h2 {
-  margin-bottom: 10%;
-}
-
-body .seccionDos {
-  min-height: 100vh;
-  width: min(92%, 1080px);
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  background-size: cover;
-  background-image: url("/img/home-tech-bets-scroll-banner-da.jpg");
-  background-position: center;
-  margin-top: 50px;
-  padding: 20px 30px;
-}
-
-body .seccionDos .parrafo,
-body .seccionTres .parrafo,
-body .seccionCuatro .parrafo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-body .seccionDos .parrafo p,
-body .seccionTres .parrafo p,
-body .seccionCuatro .parrafo p {
-  padding: 10%;
-}
-
-body .seccionTres {
-  min-height: 100vh;
-  width: min(92%, 820px);
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-body .seccionCuatro {
-  min-height: 100vh;
-  width: min(92%, 820px);
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* ===== CARDS ===== */
 .card-glass {
   background: rgba(10, 15, 25, 0.6);
@@ -600,27 +534,6 @@ body footer .pie a {
     padding: 12px 20px;
   }
 
-  body .seccionUno,
-  body .seccionDos,
-  body .seccionTres,
-  body .seccionCuatro {
-    width: calc(100% - 24px);
-    min-height: auto;
-    padding: 60px 0;
-  }
-
-  body .seccionUno .textoUno,
-  body .seccionDos .parrafo,
-  body .seccionTres .parrafo,
-  body .seccionCuatro .parrafo {
-    width: 100%;
-  }
-
-  body .seccionDos .parrafo p,
-  body .seccionTres .parrafo p,
-  body .seccionCuatro .parrafo p {
-    padding: 0;
-  }
 
   .subtitle,
   body .seccionDos h2,

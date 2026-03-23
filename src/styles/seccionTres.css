@@ -1,18 +1,115 @@
-body .seccionTres {
-  height: 100vh;
-  width: 50%;
+/* ===== SECCION ESTUDIOS ===== */
+
+.seccionTres {
+  width: 100%;
+  padding: 80px 20px;
   display: flex;
   justify-content: center;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
 }
-body .seccionTres .parrafo {
+
+.estudios-wrap {
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* HEADER */
+.estudios-header {
+  max-width: 760px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.section-kicker {
+  color: #30b9db;
+  letter-spacing: 3px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.section-description {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* GRID TARJETAS */
+.estudios-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+}
+
+/* TARJETAS */
+.estudio-card {
+  text-align: left;
+  padding: 22px 22px;
+  border-radius: 18px;
+  background: rgba(8, 14, 24, 0.55);
+  border: 1px solid rgba(48, 185, 219, 0.18);
+  backdrop-filter: blur(8px);
+  transition: 0.25s ease;
+}
+
+.estudio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(48, 185, 219, 0.15);
+}
+
+/* LOGOS */
+.estudio-logo {
+  height: 60px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: center;
+  margin-bottom: 15px;
 }
-body .seccionTres .parrafo p {
-  padding: 10%;
+
+.estudio-logo img {
+  max-height: 50px;
+  max-width: 140px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0.95);
+}
+
+/* TEXTOS */
+.estudio-card h3 {
+  font-size: 20px;
+  margin-bottom: 4px;
+  color: #ffffff;
+}
+
+.estudio-lugar {
+  font-size: 14px;
+  color: #30b9db;
+  margin-bottom: 2px;
+}
+
+.estudio-fecha {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 10px;
+}
+
+.estudio-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .estudios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .subtitle {
+    font-size: 26px;
+  }
 }
