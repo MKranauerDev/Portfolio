@@ -43,18 +43,6 @@ body {
   height: 100% !important;
 }
 
-/* ===== CAPAS ===== */
-.topbar,
-.hero-minimal,
-.seccionUno,
-.seccionDos,
-.seccionTres,
-.seccionCuatro,
-footer {
-  position: relative;
-  z-index: 1;
-}
-
 /* ===== CONTAINER GENERAL ===== */
 .container-main {
   width: min(94vw, 1380px);
@@ -330,65 +318,6 @@ section {
   transform: translateY(-6px);
   box-shadow: 0 0 25px rgba(48, 185, 219, 0.15);
 }
-
-/* ===== FOOTER ===== */
-footer {
-  margin-top: 50px;
-}
-
-body footer {
-  border-radius: 5px;
-  border: 1px solid #378bba;
-  background: #000;
-  opacity: 0.8;
-  width: min(92%, 1080px);
-  margin-inline: auto;
-  align-items: center;
-}
-
-body footer .separador {
-  border: 1px solid #378bba;
-  width: 70%;
-  margin: auto;
-}
-
-body footer .primerFooter {
-  margin-bottom: 1rem !important;
-}
-
-body footer .primerFooter h6 a {
-  color: #fff;
-  text-decoration: none;
-}
-
-body footer .primerFooter h6 a:hover {
-  color: #378bba;
-}
-
-body footer .redes {
-  margin: auto;
-}
-
-body footer .redes .btn-primary {
-  --bs-btn-border-color: none;
-}
-
-body footer .redes a:hover {
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  box-shadow: 0 0 5px 5px #378bba;
-  -webkit-box-shadow: 0 0 5px 5px #378bba;
-}
-
-body footer .pie {
-  background-color: #000;
-}
-
-body footer .pie a {
-  text-decoration: none;
-  font-weight: bold;
-}
-
 /* ===== ANIMACIÓN ===== */
 .chicle:hover {
   -webkit-animation: chicle 1s;
