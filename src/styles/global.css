@@ -289,10 +289,12 @@ body {
   background: rgba(48, 185, 219, 0.08);
 }
 
+
 .btn-secondary-custom:hover {
   background: rgba(48, 185, 219, 0.18);
   transform: translateY(-2px);
 }
+
 
 /* ===== SECCIONES ===== */
 section {
