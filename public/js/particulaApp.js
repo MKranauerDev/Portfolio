@@ -2,7 +2,7 @@ particlesJS(
     {
         "particles": {
             "number": {
-            "value": 200,
+            value: window.innerWidth < 768 ? 20 : 80,
             "density": {
                 "enable": true,
                 "value_area": 800
