@@ -1,3 +1,7 @@
+@import "./seccionUno.css";
+@import "./seccionDos.css";
+@import "./footer.css";
+
 html {
   scroll-behavior: smooth;
 }
