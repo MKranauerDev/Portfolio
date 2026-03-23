@@ -12,6 +12,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^6.0.8"
+    "@emailjs/browser": "^4.4.1",
+    "astro": "^6.0.8",
+    "sweetalert2": "^11.26.24"
   }
 }

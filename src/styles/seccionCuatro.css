@@ -120,6 +120,53 @@
   min-height: 160px;
 }
 
+.form-status {
+  margin-top: 14px;
+  min-height: 24px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  transition: all 0.3s ease;
+}
+
+.form-status.error {
+  color: #ff4d4d;
+}
+
+.form-status.success {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.form-alert {
+  width: 100%;
+  margin-bottom: 24px;
+  padding: 18px 22px;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.form-alert.hidden {
+  display: none;
+}
+
+.form-alert.success {
+  display: block;
+  background: rgba(196, 231, 214, 0.95);
+  border-color: #a8d5bb;
+  color: #195c37;
+}
+
+.form-alert.error {
+  display: block;
+  background: rgba(255, 220, 220, 0.96);
+  border-color: #f1a7a7;
+  color: #8a1f1f;
+}
+
 .btn-contacto-submit {
   align-self: flex-start;
   padding: 12px 24px;
@@ -161,4 +208,12 @@
     width: 100%;
     align-self: stretch;
   }
+}
+
+input.error, textarea.error {
+  border: 2px solid #ff4d4d;
+}
+
+input.success, textarea.success {
+  border: 2px solid #4CAF50;
 }

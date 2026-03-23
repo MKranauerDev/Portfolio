@@ -24,54 +24,87 @@
           </p>
 
           <div class="contacto-datos">
-            <a href="#">
+            <a
+              href="https://github.com/MKranauerDev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i class="fa-brands fa-github"></i>
               <span>GitHub</span>
             </a>
 
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/in/mkranauer"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i class="fa-brands fa-linkedin"></i>
               <span>LinkedIn</span>
             </a>
           </div>
         </div>
 
-        <div
+        <form
+          id="contact-form"
           class="card-glass contacto-form"
           data-aos="fade-left"
           data-aos-duration="1100"
         >
+          <div id="form-alert" class="form-alert hidden">
+            <span id="form-alert-text"></span>
+          </div>
+
           <div class="form-row">
             <div class="form-group">
               <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" placeholder="Tu nombre" />
+              <input
+                type="text"
+                id="nombre"
+                name="name"
+                placeholder="Tu nombre"
+              />
             </div>
 
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" placeholder="tuemail@email.com" />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="tuemail@email.com"
+              />
             </div>
           </div>
 
           <div class="form-group">
             <label for="asunto">Asunto</label>
-            <input type="text" id="asunto" placeholder="Motivo del mensaje" />
+            <input
+              type="text"
+              id="asunto"
+              name="subject"
+              placeholder="Motivo del mensaje"
+            />
           </div>
 
           <div class="form-group">
             <label for="mensaje">Mensaje</label>
             <textarea
               id="mensaje"
+              name="message"
               rows="6"
               placeholder="Contame un poco sobre tu propuesta o consulta..."
             ></textarea>
           </div>
 
-          <button type="button" class="btn-contacto-submit">
+          <button type="button" id="send-btn" class="btn-contacto-submit">
             Enviar mensaje
           </button>
-        </div>
+        </form>
       </div>
     </div>
   </div>
 </section>
+
+<script defer src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+></script>
+<script defer src="/js/contacto.js"></script>
