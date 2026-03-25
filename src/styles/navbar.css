@@ -23,10 +23,54 @@
 }
 
 /* ===== LOGO ===== */
-.brand img {
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  padding-left: 4px;
+}
+
+.logo-icon {
   width: 50px;
   height: auto;
   display: block;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1;
+  display: flex;
+  gap: 4px;
+}
+
+/* Hover glow */
+.logo-text:hover {
+  text-shadow:
+    0 0 8px rgba(0, 195, 255, 0.45),
+    0 0 18px rgba(0, 195, 255, 0.25);
+}
+
+/* Krana color degradado */
+.krana {
+  background: linear-gradient(90deg,#1e90ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: 800;
+}
+
+/* {Dev} color más claro */
+.dev {
+  background: linear-gradient(90deg,#00c3ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: 500;
 }
 
 /* ===== NAV DESKTOP ===== */
