@@ -5,6 +5,16 @@
 @import "./seccionCuatro.css";
 @import "./footer.css";
 
+html, body {
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -46,8 +56,12 @@ body {
 
 /* ===== CONTAINER GENERAL ===== */
 .container-main {
-  width: min(94vw, 1380px);
+ .container-main {
+  width: 100%;
+  max-width: 1380px;
   margin: 0 auto;
+  padding: 0 16px;
+}
 }
 
 /* ===== HERO ===== */
