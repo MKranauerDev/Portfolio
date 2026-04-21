@@ -75,6 +75,52 @@
 .project-tags i {
   color: #30b9db;
 }
+.project-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+/* Base */
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+}
+/* 🔵 Botón principal (Ver app) */
+.project-links a.primary {
+  background: #30b9db;
+  color: #001018;
+  font-weight: 700;
+  box-shadow: 0 0 18px rgba(48, 185, 219, 0.28);
+}
+
+.project-links a.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 24px rgba(48, 185, 219, 0.45);
+}
+
+/* ⚪ Botón outline (Ver código) */
+.project-links a.secondary {
+  border: 1px solid rgba(48, 185, 219, 0.55);
+  color: #ffffff;
+  background: rgba(48, 185, 219, 0.08);
+}
+
+.project-links a.secondary:hover {
+  background: rgba(48, 185, 219, 0.18);
+  transform: translateY(-2px);
+}
 
 /* ===== MOBILE ===== */
 @media (max-width: 1100px) {
