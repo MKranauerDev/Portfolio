@@ -56,12 +56,10 @@ body {
 
 /* ===== CONTAINER GENERAL ===== */
 .container-main {
- .container-main {
   width: 100%;
-  max-width: 1380px;
+  max-width: 1320px;
   margin: 0 auto;
-  padding: 0 16px;
-}
+  padding: 0 24px;
 }
 
 /* ===== HERO ===== */
@@ -85,10 +83,10 @@ body {
 
 .hero-content {
   width: 100%;
-  max-width: 100%;
+  max-width: 1320px;
   margin: 0 auto;
   margin-top: 10px;
-  padding: 40px 40px; /* antes 32px -> ahora más alto */
+  padding: 40px 40px;
   background: rgba(5, 10, 18, 0.45);
   backdrop-filter: blur(6px);
   border: 1px solid rgba(48, 185, 219, 0.35);
@@ -269,10 +267,11 @@ section {
 
 /* ===== MOBILE ===== */
 @media (max-width: 900px) {
-  .container-main {
-    width: calc(100% - 24px);
+   .container-main {
+    width: 100%;
     max-width: none;
     margin: 0 auto;
+    padding: 0 16px;
   }
 
   
