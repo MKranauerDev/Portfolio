@@ -105,6 +105,11 @@
   font-size: 13px;
   color: #30b9db;
 }
+.skill-tags span:hover {
+  background: rgba(48, 185, 219, 0.16);
+  box-shadow: 0 0 14px rgba(48, 185, 219, 0.18);
+  transform: translateY(-2px);
+}
 
 /* ===== MOBILE ===== */
 @media (max-width: 900px) {

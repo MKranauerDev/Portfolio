@@ -75,6 +75,11 @@
 .project-tags i {
   color: #30b9db;
 }
+.project-tags span:hover {
+  background: rgba(48, 185, 219, 0.16);
+  box-shadow: 0 0 14px rgba(48, 185, 219, 0.18);
+  transform: translateY(-2px);
+}
 .project-links {
   display: flex;
   gap: 12px;
@@ -120,6 +125,66 @@
 .project-links a.secondary:hover {
   background: rgba(48, 185, 219, 0.18);
   transform: translateY(-2px);
+}
+
+.project-links-inprocess {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.project-links-inprocess .disabled {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+
+  background: rgba(255, 70, 70, 0.16);
+  color: #ff6b6b;
+  border: 1px solid rgba(255, 70, 70, 0.55);
+
+  cursor: not-allowed;
+  pointer-events: auto;
+  cursor: not-allowed;
+
+  transition: all 0.25s ease;
+}
+
+/* 🔥 Hover sutil */
+.project-links-inprocess .disabled:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(255, 77, 77, 0.35);
+  background: rgba(255, 70, 70, 0.22);
+}
+
+/* 🔴 Principal */
+.project-links-inprocess .primary.disabled {
+  background: #ff4d4d;
+  color: #ffffff;
+  border: 1px solid #ff4d4d;
+}
+
+/* 🔴 Hover principal */
+.project-links-inprocess .primary.disabled:hover {
+  box-shadow: 0 0 24px rgba(255, 77, 77, 0.5);
+}
+
+/* ⚪ Secundario */
+.project-links-inprocess .secondary.disabled {
+  background: rgba(255, 77, 77, 0.08);
+  color: #ffffff;
+  border: 1px solid rgba(255, 77, 77, 0.55);
+}
+
+/* ⚪ Hover secundario */
+.project-links-inprocess .secondary.disabled:hover {
+  background: rgba(255, 77, 77, 0.18);
 }
 
 /* ===== MOBILE ===== */
