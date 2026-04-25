@@ -141,4 +141,41 @@
   .skill-card p {
     font-size: 15px;
   }
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    padding: 28px 22px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .project-links,
+  .project-links-inprocess {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 14px;
+  }
+
+  .project-links a,
+  .project-links-inprocess .disabled {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+    padding: 14px 18px;
+  }
+
+  .tech-stack {
+    gap: 10px;
+  }
+
+  .tech-badge {
+    font-size: 0.85rem;
+    padding: 9px 14px;
+  }
 }
